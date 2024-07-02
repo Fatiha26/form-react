@@ -14,25 +14,23 @@ const LoginSign = () => {
      </div>
      <div className="inputs">
         <div className="input">
-            <img src={person} alt="icon" />
-            <input type="text"  />
+            <img src={person} alt="icon"  />
+            <input type="text" placeholder='Name' />
         </div>
         <div className="input">
             <img src={email} alt="icon" />
-            <input type="email"  />
+            <input type="email" placeholder='Email' />
         </div>
         <div className="input">
             <img src={password} alt="icon" />
-            <input type="password"  />
+            <input type="password" placeholder='Password' />
         </div>
      </div>
-     <div className='forget-pass'>forget password?<span>Click Here!</span></div>
-     <div className="submit_container">
-        <div className="submit">
+     <div className='forget-pass'>forget password? <span>Click Here!</span></div>
+        <div className="submit-container">
             <div className="submit">Sign Up</div>
             <div className="submit">Login</div>
         </div>
-     </div>
 
     </div>
   )
