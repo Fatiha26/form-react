@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.css';
 import email from '../assets/image/email.png'
 import password from '../assets/image/password.png'
@@ -6,10 +6,11 @@ import person from '../assets/image/person.png'
 
 
 const LoginSign = () => {
+    const [action,setAction] = useState("Sign Up");
   return (
     <div className='container'>
      <div className="header">
-        <div className="text">Sign Up</div>
+        <div className="text">{action}</div>
         <div className="underline"></div>
      </div>
      <div className="inputs">
@@ -28,8 +29,10 @@ const LoginSign = () => {
      </div>
      <div className='forget-pass'>forget password? <span>Click Here!</span></div>
         <div className="submit-container">
-            <div className="submit">Sign Up</div>
-            <div className="submit">Login</div>
+            <div className={action==="Login"? "submit gray" : "submit"} onClick={()=>{
+                setAction("Sign Up")}}>Sign Up</div>
+            <div className={action==="Sign Up"? "submit gray" : "submit"} onClick={()=>{
+                setAction("Login")}}>Login</div>
         </div>
 
     </div>
