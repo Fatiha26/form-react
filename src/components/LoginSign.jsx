@@ -26,6 +26,13 @@ const LoginSign = () => {
             <input type="password"  />
         </div>
      </div>
+     <div className='forget-pass'>forget password?<span>Click Here!</span></div>
+     <div className="submit_container">
+        <div className="submit">
+            <div className="submit">Sign Up</div>
+            <div className="submit">Login</div>
+        </div>
+     </div>
 
     </div>
   )
